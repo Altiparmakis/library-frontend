@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Info</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+</head>
+<body>
+    <h1>Book Info:<span id="bookTitleAndAuthor"></span></h1>
+
+    <form class="search-form">
+        <table>
+            <tr>
+                <td>ISBN:</td>
+                <td id="isbn"></td>
+            </tr>
+            <tr>
+                <td>Publisher:</td>
+                <td id="publisher"></td>
+            </tr>
+            <tr>
+                <td>Year of Publication:</td>
+                <td id="yearOfPublication"></td>
+            </tr>
+            <tr>
+                <td>Place of Publication:</td>
+                <td id="placeOfPublication"></td>
+            </tr>
+            <tr>
+                <td>Currently available copies:</td>
+                <td id="availableCopies"></td>
+            </tr>
+        </table>
+    </form>
+
+    <br></br>
+    <a class="btn" id="checkoutLink" href="book-checkout.html">Checkout this book</a>
+    <a class="btn" id="currentHoldersLink" href="">Current Holder</a>
+    <a class="btn" id="checkoutHistoryLink" href="#">Checkout History</a>
+    <div id="currentHoldersContainer"></div>
+    <div id="checkoutHistoryContainer"></div>
+    <br></br>
+    <a class="btn" id="editBookLink" href="edit-book.html">Edit Book</a>
+    <a class="btn" id="removeCopyLink" href="#">Remove a Copy</a>
+    <a class="btn" id="addCopyLink" href="#">Add a Copy</a>
+
+    
+    <br></br>
+    <a class="btn" href="index.html">Back To Home</a>
+    <a class="btn" href="javascript:history.back()">Back to previous page</a>
+    <script src="../assets/scripts/infoBook.js"></script>
+</body>
+</html>

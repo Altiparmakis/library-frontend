@@ -1,0 +1,136 @@
+:root{
+    --primary-color:#34495e;
+    --secondary-color:#ecf0f1;
+    --accent-color:#e74c3c;
+    --hover-accent-color:#ff6e57;
+}
+
+body{
+    font-family: 'Arial',sens-serif;
+    color:var(--primary-color);
+    /* background-color: var(--secondary-color); */
+    margin: 0px;
+    width: 100%;
+    padding:0 20px;
+    background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/hoffman.png");
+}
+h1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1:after{
+    content: '';
+    display: block;
+    width: 60%;
+    padding-top: 0.5em;
+    border-bottom: 3px solid var(--accent-color);
+}
+.container{
+    margin-top: 15vh;
+   display: grid;
+   grid-template-columns: 200px 200px ;
+   width: 100%;
+   justify-content: center;
+   gap: 30px 30px;
+    
+}
+.last-btn{
+    grid-column-start: 1;
+    grid-column-end: 3;  
+}
+.btn{
+    display:inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--accent-color);
+    color:white;
+    padding:white;
+    padding:10px 20px;
+    margin:5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.btn:hover{
+    background-color: var(--hover-accent-color);
+}
+.search-form table,.search-form td,.search-form th{
+    border:none;
+    padding: 8px;
+}
+.search-form input[type="text"],
+.search-form input[type="Date"],
+.search-form input[type="email"],
+.search-form input[type="number"]{
+    padding: 10px;
+    margin:4px 0;
+    border-radius: 4px;
+}
+.search-form input[type="submit"]{
+    background-color: var(--accent-color);
+    color:white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.search-form input[type="submit"]:hover{
+    background-color: var(--hover-accent-color);
+}
+.results-table{
+    width: 60%;
+    margin-top:20px ;
+    border-collapse: collapse;
+
+}
+.results-table th,
+.results-table td{
+    padding: 12px ;
+    text-align: left;
+    border-bottom: 1px solid var(--primary-color);
+}
+.results-table th,.results-table tr:nth-child(odd){
+    background-color: #f9f9f9;
+}
+.results-table tr:hover{
+    background-color: #f0f0f0;
+}
+.results-table a{
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+.results-table a:hover{
+    color:var(--hover-accent-color)
+}
+.results-table .action-btn , .action-btn{
+    display:inline-block;
+    text-decoration: none;
+    background-color: var(--accent-color);
+    color:white;
+    padding:white;
+    padding:5px 10px;
+    margin:2px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    font-size: 0.8em;
+}
+.results-table .action-btn:hover , .action-btn:hover{
+    background-color: var(--hover-accent-color);
+    color: white;
+}
+h2:before{
+    content: '';
+    display: block;
+    width: 60%;
+    padding-bottom: 0.5em;
+    border-top: 2px solid var(--accent-color);
+}
+.h2-no-line:before{
+     display: none;
+}
+
+
+

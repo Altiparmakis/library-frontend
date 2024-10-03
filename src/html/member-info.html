@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Info</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+</head>
+<body>
+    <h1>Member Info:<span id="memberFullName"></span></h1>
+
+    <form class="search-form">
+        <table>
+            <tr>
+                <td>Card Number:</td>
+                <td id="cardNumber"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td id="address"></td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td id="phone"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td id="email"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td id="dob"></td>
+            </tr>
+            <tr>
+                <td>Membership started:</td>
+                <td id="membershipStarted"></td>
+            </tr>
+            <tr>
+                <td>Membership ended:</td>
+                <td id="membershipEnded"></td>
+            </tr>
+            <tr>
+                <td>Membership status:</td>
+                <td id="membershipStatus"></td>
+            </tr>
+        </table>
+    </form>
+
+    <h2 id="checkedOutBooksHeading">Cheched out Books:</h2>
+    <div id ="checkedOutBooks"></div>
+    <br></br>
+    <a class="btn" id="checkoutLink" href="book-checkout.html">Checkout a new book</a>
+    <a class="btn" href="member-history.html">Member History</a>
+    <a class="btn" href="edit-member.html">Edit Member</a>
+    <a class="btn" id="memebershipActionLink" href="#">Change Membership Status</a>
+
+    <script src="../assets/scripts/infoMember.js"></script>
+    <br></br>
+    <a class="btn" href="index.html">Back To Home</a>
+    <a class="btn" href="javascript:history.back()">Back to previous page</a>
+</body>
+</html>

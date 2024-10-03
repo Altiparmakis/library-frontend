@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Members</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+  </head>
+  <body>
+    <h1>Search Members</h1>
+    <div class="container-form">
+        <form class="search-form">
+                <table>
+                    <tr>
+                        <td><label for="barcodeNumber">Barcode:</td>
+                        <td><input type="text" id="barcodeNumber" name="barcodeNumber" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cardNumber">Card Number:</td>
+                        <td><input type="text" id="cardNumber" name="cardNumber" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="firstName">First Name:</td>
+                        <td><input type="text" id="firstName" name="firstName" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lastName">last Name:</td>
+                        <td><input type="text" id="lastName" name="lastName" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Search" /></td>
+                    </tr>
+                </table>
+            </form>
+            </div>
+            <div id="resultsContainer"></div>
+            <script src="../assets/scripts/searchMembers.js"></script>
+            
+            <br></br>
+            <a class="btn last-btn" href="index.html">Back To Home</a>
+            <a class="btn last-btn" href="javascript:history.back()">Back to previous page</a>
+    
+    
+  </body>
+</html>
